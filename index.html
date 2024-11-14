@@ -20,6 +20,28 @@
         section {
             margin: 20px 0;
         }
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .skills-container {
+            margin: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li {
+            margin: 10px 0;
+        }
+        .skills-category {
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -49,82 +71,106 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#publications">Publications</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container mt-5">
-        <section id="summary">
-            <h2>Summary</h2>
-            <div class="card">
-                <div class="card-body">
-                    <p>A brief introduction about yourself, your background, and your professional journey.</p>
-                </div>
+        <!-- Profile Section -->
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-4">
+                <img src="your-image-url.jpg" alt="Your Image" class="profile-image">
+                <h2>Priyanka Kunchala</h2>
+                <p>Software Engineer - Full Stack</p>
             </div>
-        </section>
+        </div>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="card">
-                <div class="card-body">
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Java</li>
-                        <li>HTML/CSS</li>
-                        <li>React</li>
-                        <li>Spring Boot</li>
-                    </ul>
-                </div>
+        <!-- Tabs for different sections -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="summary-tab" data-bs-toggle="tab" href="#summary" role="tab" aria-controls="summary" aria-selected="true">Summary</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="skills-tab" data-bs-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="education-tab" data-bs-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="experience-tab" data-bs-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="certifications-tab" data-bs-toggle="tab" href="#certifications" role="tab" aria-controls="certifications" aria-selected="false">Certifications</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="publications-tab" data-bs-toggle="tab" href="#publications" role="tab" aria-controls="publications" aria-selected="false">Publications</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+            </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="summary" role="tabpanel" aria-labelledby="summary-tab">
+                <h2>Summary</h2>
+                <p>A brief introduction about yourself, your background, and your professional journey.</p>
             </div>
-        </section>
+            <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                <h2>Skills</h2>
+               <div class="skills-container">
+    
+        
+        <ul class="skills-list">
+            <li><span class="skills-category">Domain:</span> Software Development for ERP using JAVA, Payments, Banking</li>
+            <li><span class="skills-category">Programming Languages:</span> Core Java, Java 8/11, Spring framework, Spring MVC, Spring Boot, Microservices, Rest API, J Unit testing, SQL, C#, ASP.NET, HTML, XML, CSS, LESS, JavaScript, React JS</li>
+            <li><span class="skills-category">Database:</span> MySQL, Oracle, Mongo DB, SQL Server, Teradata, MS Access, SQLite</li>
+            <li><span class="skills-category">Servers:</span> Tomcat, Raptor Application</li>
+            <li><span class="skills-category">Project Management Tools:</span> Redmine, Jira, Asana, Trello, MS Project Pro</li>
+            <li><span class="skills-category">Version Control / DevOps:</span> GitHub, Jenkins, Altus, CI/CD Deployment</li>
+            <li><span class="skills-category">Monitoring Tools:</span> Sherlock, Galilei, Cal Search</li>
+            <li><span class="skills-category">Other Tools:</span> RCS, PCE, Data Trek, Notebooks, Site Notebooks, Swagger, Elastic Search, TMON, Deploy IT, Lucid Chart, Zoom, PearDeck</li>
+            <li><span class="skills-category">IDE:</span> Eclipse, IntelliJ, Visual Studio</li>
+            <li><span class="skills-category">Cloud:</span> AWS, Microsoft Azure</li>
+        </ul>
+    </div>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div class="card">
-                <div class="card-body">
-                    <p>Details about your academic background, degrees, and institutions attended.</p>
-                </div>
             </div>
-        </section>
-
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <div class="card">
-                <div class="card-body">
-                    <p>Information about your past jobs, roles, and achievements.</p>
-                </div>
+            <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                <h2>Education</h2>
+                <p>Details about your academic background, degrees, and institutions attended.</p>
             </div>
-        </section>
-
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <div class="card">
-                <div class="card-body">
-                    <ul>
-                        <li>Java Developer Certification</li>
-                        <li>Certified Scrum Master</li>
-                    </ul>
-                </div>
+            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                <h2>Professional Experience</h2>
+                <p>Information about your past jobs, roles, and achievements.</p>
             </div>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            <div class="card">
-                <div class="card-body">
-                    <ul>
-                        <li>Title of Publication 1</li>
-                        <li>Title of Publication 2</li>
-                    </ul>
-                </div>
+            <div class="tab-pane fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Java Developer Certification</li>
+                    <li>Certified Scrum Master</li>
+                </ul>
             </div>
-        </section>
+            <div class="tab-pane fade" id="publications" role="tabpanel" aria-labelledby="publications-tab">
+                <h2>Publications</h2>
+                <ul>
+                    <li>Title of Publication 1</li>
+                    <li>Title of Publication 2</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <h2>Contact</h2>
+                <p>Email: your.email@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
     </div>
 
     <footer>
         <div class="container text-center">
-            <p>Contact: your.email@example.com</p>
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
         </div>
     </footer>
 
