@@ -1,114 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priyanka Kunchala - Portfolio</title>
-  <link href="styles.css" rel="stylesheet"> <!-- Link to your external CSS file -->
-  <style>
-    /* Inline CSS for quick styling, move to a separate styles.css file for a clean structure */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #0077b6;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #023e8a;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 20px;
-    }
-    .about, .portfolio, .contact {
-      margin-bottom: 40px;
-    }
-    .portfolio-items {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .portfolio-item {
-      background-color: white;
-      padding: 15px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      flex: 1 1 calc(33% - 40px);
-      box-sizing: border-box;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #0077b6;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .navbar {
+            background-color: #0073e6;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .hero {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            margin: 40px 0 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Your Profession or Tagline</p>
-  </header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Your Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Your Name</h1>
+        <p class="lead">A short tagline about yourself or your profession.</p>
+    </div>
 
-  <div class="container">
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>Write a brief introduction about yourself, your background, and what you do.</p>
+    <!-- About Me Section -->
+    <section id="about" class="container mt-5">
+        <h2 class="section-title">About Me</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="your-photo.jpg" alt="Your Photo" class="img-fluid rounded-circle mb-3">
+            </div>
+            <div class="col-md-6">
+                <p>Write a brief bio about yourself, highlighting your background, interests, and professional achievements. Keep it engaging and to the point.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="portfolio" class="portfolio">
-      <h2>Portfolio</h2>
-      <div class="portfolio-items">
-        <div class="portfolio-item">
-          <h3>Project 1</h3>
-          <p>Brief description of the project. <a href="#">View Project</a></p>
+    <!-- Projects Section -->
+    <section id="projects" class="container mt-5">
+        <h2 class="section-title">Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title 1</h5>
+                        <p class="card-text">Brief description of the project. You can include technologies used and key features.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title 2</h5>
+                        <p class="card-text">Brief description of the project. You can include technologies used and key features.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Title 3</h5>
+                        <p class="card-text">Brief description of the project. You can include technologies used and key features.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="portfolio-item">
-          <h3>Project 2</h3>
-          <p>Brief description of the project. <a href="#">View Project</a></p>
-        </div>
-        <div class="portfolio-item">
-          <h3>Project 3</h3>
-          <p>Brief description of the project. <a href="#">View Project</a></p>
-        </div>
-        <!-- Add more projects as needed -->
-      </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">Your GitHub Profile</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
+        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">Your GitHub</a></p>
     </section>
-  </div>
 
-  <footer>
-    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS (with Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
