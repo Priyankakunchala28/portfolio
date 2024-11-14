@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyanka Kunchala - Portfolio</title>
+  <link href="styles.css" rel="stylesheet"> <!-- Link to your external CSS file -->
+  <style>
+    /* Inline CSS for quick styling, move to a separate styles.css file for a clean structure */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #023e8a;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .about, .portfolio, .contact {
+      margin-bottom: 40px;
+    }
+    .portfolio-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .portfolio-item {
+      background-color: white;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(33% - 40px);
+      box-sizing: border-box;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0077b6;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Your Profession or Tagline</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>Write a brief introduction about yourself, your background, and what you do.</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <h3>Project 1</h3>
+          <p>Brief description of the project. <a href="#">View Project</a></p>
+        </div>
+        <div class="portfolio-item">
+          <h3>Project 2</h3>
+          <p>Brief description of the project. <a href="#">View Project</a></p>
+        </div>
+        <div class="portfolio-item">
+          <h3>Project 3</h3>
+          <p>Brief description of the project. <a href="#">View Project</a></p>
+        </div>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">Your GitHub Profile</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
