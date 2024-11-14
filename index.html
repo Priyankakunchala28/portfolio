@@ -3,131 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Portfolio</title>
+    <title>Your Personal Website</title>
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-        /* Custom CSS */
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        .navbar {
-            background-color: #0073e6;
-        }
-        .navbar-brand, .nav-link {
-            color: white !important;
-        }
-        .hero {
+            padding-top: 20px;
             background-color: #f8f9fa;
-            padding: 50px 0;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        .section-title {
-            margin: 40px 0 20px;
-            text-align: center;
         }
         footer {
-            background-color: #0073e6;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        section {
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">Your Name</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#summary">Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Your Name</h1>
-        <p class="lead">A short tagline about yourself or your profession.</p>
+    <div class="container mt-5">
+        <section id="summary">
+            <h2>Summary</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>A brief introduction about yourself, your background, and your professional journey.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>HTML/CSS</li>
+                        <li>React</li>
+                        <li>Spring Boot</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>Details about your academic background, degrees, and institutions attended.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p>Information about your past jobs, roles, and achievements.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li>Java Developer Certification</li>
+                        <li>Certified Scrum Master</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <div class="card">
+                <div class="card-body">
+                    <ul>
+                        <li>Title of Publication 1</li>
+                        <li>Title of Publication 2</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <!-- About Me Section -->
-    <section id="about" class="container mt-5">
-        <h2 class="section-title">About Me</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <img src="your-photo.jpg" alt="Your Photo" class="img-fluid rounded-circle mb-3">
-            </div>
-            <div class="col-md-6">
-                <p>Write a brief bio about yourself, highlighting your background, interests, and professional achievements. Keep it engaging and to the point.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container mt-5">
-        <h2 class="section-title">Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Title 1</h5>
-                        <p class="card-text">Brief description of the project. You can include technologies used and key features.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="project2.jpg" class="card-img-top" alt="Project 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Title 2</h5>
-                        <p class="card-text">Brief description of the project. You can include technologies used and key features.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="project3.jpg" class="card-img-top" alt="Project 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Project Title 3</h5>
-                        <p class="card-text">Brief description of the project. You can include technologies used and key features.</p>
-                        <a href="#" class="btn btn-primary">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container mt-5">
-        <h2 class="section-title">Contact</h2>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">Your GitHub</a></p>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="container text-center">
+            <p>Contact: your.email@example.com</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap JS (with Popper.js) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
